@@ -10,10 +10,13 @@ pub fn App() -> impl IntoView {
 
     view! {
 
+        // id=leptos means cargo-leptos will hot-reload this stylesheet
+        <link rel="stylesheet" id="leptos" href="/main.css"/>
+        <link rel="stylesheet" id="leptos" href="/second.css"/>
 
         // injects a stylesheet into the document <head>
-        // id=leptos means cargo-leptos will hot-reload this stylesheet
-        <Stylesheet id="leptos" href="/pkg/multiple-css-files.css"/>
+        <Stylesheet id="leptos" href="/third.css"/>
+
 
         // sets the document title
         <Title text="Welcome to Leptos"/>
